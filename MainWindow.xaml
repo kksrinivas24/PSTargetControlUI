@@ -89,22 +89,27 @@
                     <ColumnDefinition Width="507.2"/>
                     <ColumnDefinition Width="0*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="BasicCamSanity" Content="Basiccam Sanity" Grid.Column="1" HorizontalAlignment="Left" Margin="208,128,0,195" VerticalAlignment="Center" Width="100" Height="30" >
+                <Button x:Name="BasicCamSanity" Content="Basiccam Sanity" Grid.Column="1" HorizontalAlignment="Left" Margin="208,56,0,267" VerticalAlignment="Center" Width="100" Height="30" >
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
                 </Button>
-                <Button x:Name="ListFileRepo" Content="List File Repo" Grid.Column="1" Margin="208,185,199.2,138" Width="100" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="ListFileRepo" Content="List File Repo" Grid.Column="1" Margin="208,119,199.2,204" Width="100" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
                 </Button>
-                <Button x:Name="SetDevEnv" Content="Set Dev Env" Grid.Column="1" HorizontalAlignment="Left" Margin="209,242,0,81" VerticalAlignment="Center" Width="100" Height="30" >
+                <Button x:Name="SetDevEnv" Content="Set Dev Env" Grid.Column="1" HorizontalAlignment="Left" Margin="209,238,0,85" VerticalAlignment="Center" Width="100" Height="30" >
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
                 </Button>
                 <Button x:Name="Restart" Content="Restart target" Grid.Column="1" Margin="209,296,198.2,27" Width="100" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FFC35666">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="PushDebugtools" Content="Push Debug Tools" Grid.Column="1" HorizontalAlignment="Left" Margin="209,177,0,146" VerticalAlignment="Center" Width="100" Height="30" >
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
