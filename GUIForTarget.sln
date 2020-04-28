@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
+# Blend for Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIForTarget", "GUIForTarget.csproj", "{0215428A-B02F-4364-A74C-41BA542CC6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetRegWindow", "..\SetRegWindow\SetRegWindow.csproj", "{8D69EAC4-A56B-4D60-B195-02EC44227F18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0215428A-B02F-4364-A74C-41BA542CC6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0215428A-B02F-4364-A74C-41BA542CC6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0215428A-B02F-4364-A74C-41BA542CC6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D69EAC4-A56B-4D60-B195-02EC44227F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D69EAC4-A56B-4D60-B195-02EC44227F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D69EAC4-A56B-4D60-B195-02EC44227F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D69EAC4-A56B-4D60-B195-02EC44227F18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
