@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUIForTarget" WindowStartupLocation="CenterScreen"
         
-        Title="Target Controls" Foreground="White" UseLayoutRounding="True" Width="561" Height="436.2" BorderThickness="0" ResizeMode="NoResize" WindowStyle="ToolWindow" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
+        Title="Target Controls" Foreground="White" UseLayoutRounding="True" Width="855.5" Height="699.2" BorderThickness="0" ResizeMode="NoResize" WindowStyle="ToolWindow" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
             <GradientStop Color="#FF1E52E7" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <TabControl HorizontalAlignment="Left" Height="382" Margin="23,10,-6.4,0" VerticalAlignment="Top" Width="513">
+    <TabControl HorizontalAlignment="Left" Height="630" Margin="23,10,0,0" VerticalAlignment="Top" Width="795">
         <TabItem Header="Main Controls" >
             <TabItem.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -20,7 +20,7 @@
                     <GradientStop Color="#FF1275E0" Offset="1"/>
                 </LinearGradientBrush>
             </TabItem.Background>
-            <Grid Margin="0,0,0.2,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="352">
+            <Grid Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
@@ -29,44 +29,39 @@
                 </Grid.Background>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"/>
-                    <ColumnDefinition Width="46*"/>
-                    <ColumnDefinition Width="123*"/>
-                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="188"/>
+                    <ColumnDefinition Width="349.6"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="StartLog" Content="Start Log" Grid.Column="2" Margin="170.6,247,48.2,75" Background="#FF45CA7B" OpacityMask="#FF047315" RenderTransformOrigin="1.004,-1.679">
+                <Button x:Name="PushDMFT" Content="Push DeviceMFT DLL" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,173,0,381" Width="150" RenderTransformOrigin="0.491,2.183">
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
                 </Button>
-                <Button x:Name="StopLog" Content="Stop log" Grid.Column="2" HorizontalAlignment="Center" Margin="168.6,299,50.2,23" Width="150" Background="#FFC35666">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushDMFT" Content="Push DMFT DLL" Grid.Column="1" HorizontalAlignment="Left" Margin="50,299,0,23" Width="150" RenderTransformOrigin="0.491,2.183" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushRearBin" Content="Push Rear Sensor binary" Grid.Column="1" HorizontalAlignment="Left" Margin="50,247,0,75" Width="150" RenderTransformOrigin="0.491,2.183" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushFrontBin" Content="Push Front sensor binary" Grid.Column="1" Margin="50,196,0,126" RenderTransformOrigin="0.491,2.183" HorizontalAlignment="Left" Width="150" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushAuxBin" Content="Push Aux sensor binary" Grid.Column="1" HorizontalAlignment="Left" Margin="50,147,0,175" Width="150" RenderTransformOrigin="0.491,2.183" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,0,138.4,0">
-                    <TextBox x:Name ="BuildPath" Margin="46.5,19.68,-450.5,263.72" IsReadOnly="true" TextWrapping="wrap" Text="Build Path" Foreground="White" SelectionBrush="{x:Null}" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" UseLayoutRounding="False" RenderTransformOrigin="0.506,0.652" Background="{x:Null}" VerticalContentAlignment="Center" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" Height="68.6" HorizontalAlignment="Center" Width="395.4" BorderBrush="{x:Null}" IsEnabled="False"/>
-                </StackPanel>
 
+                <RichTextBox x:Name="OutputText" Grid.Column="2" Margin="9.4,73,-239,23" Foreground="White">
+                    <RichTextBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF3E86F0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </RichTextBox.Background>
+
+                </RichTextBox>
+                <Button x:Name="StartLog" Content="Start Log" Grid.Column="1" Background="#FF45CA7B" OpacityMask="#FF047315" HorizontalAlignment="Left" Margin="22.2,256,0,298" Width="150" RenderTransformOrigin="0.491,2.183">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="StopLog" Content="Stop Log" Background="#FFC35666" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,335,0,219" Width="150" RenderTransformOrigin="0.491,2.183">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="ClearOutput" Content="Clear console output" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,555,0,23" Width="150" RenderTransformOrigin="0.491,2.183">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
             </Grid>
         </TabItem>
         <TabItem Header="Other controls" >
@@ -76,7 +71,7 @@
                     <GradientStop Color="#FF1275E0" Offset="1"/>
                 </LinearGradientBrush>
             </TabItem.Background>
-            <Grid Margin="0,0,0.2,1.4" HorizontalAlignment="Right" Width="507">
+            <Grid Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
@@ -89,48 +84,10 @@
                     <ColumnDefinition Width="359.2"/>
                     <ColumnDefinition Width="0*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="BasicCamSanity" Content="Basiccam Sanity" Grid.Column="2" Margin="159,299,48.2,23">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="ListFileRepo" Content="List File Repo" Grid.Column="1" Margin="50,0,0,175" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="SetDevEnv" Content="Set Dev Env" Grid.Column="1" HorizontalAlignment="Left" Margin="50,0,0,75" VerticalAlignment="Bottom" Width="150" Height="30" Grid.ColumnSpan="2" >
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="Restart" Content="Restart target" Grid.Column="1" Margin="50,0,0,23" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Background="#FFC35666" Grid.ColumnSpan="2">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushDebugtools" Content="Push Debug Tools" Grid.Column="1" HorizontalAlignment="Left" Margin="50,0,0,126" VerticalAlignment="Bottom" Width="150" Height="30" Grid.ColumnSpan="2" >
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="SetReg" Content="Set registry flag" Grid.Column="2" Margin="159,247,48.2,75" VerticalAlignment="Bottom" Height="30" >
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="SignDrivers" Content="Sign drivers" Grid.Column="2" Margin="159,0,48.2,126" VerticalAlignment="Bottom" Height="30" >
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
-                <Button x:Name="PushAll" Content="Push all binaries" Grid.Column="2" Margin="161,0,0,175" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                    <Button.Effect>
-                        <DropShadowEffect/>
-                    </Button.Effect>
-                </Button>
             </Grid>
         </TabItem>
     </TabControl>
+
+
 
 </Window>
