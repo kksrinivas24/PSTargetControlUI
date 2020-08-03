@@ -89,7 +89,7 @@
                     <ColumnDefinition Width="359.2"/>
                     <ColumnDefinition Width="0*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="BasicCamSanity" Content="Basiccam Sanity" Grid.Column="2" Margin="159,299,51.4,23">
+                <Button x:Name="BasicCamSanity" Content="Basiccam Sanity" Grid.Column="2" Margin="159,299,48.2,23">
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
@@ -120,6 +120,11 @@
                     </Button.Effect>
                 </Button>
                 <Button x:Name="SignDrivers" Content="Sign drivers" Grid.Column="2" Margin="159,0,48.2,126" VerticalAlignment="Bottom" Height="30" >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="PushAll" Content="Push all binaries" Grid.Column="2" Margin="161,0,0,175" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>
