@@ -63,42 +63,42 @@
                             <GradientStop Color="#FF3E86F0" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Button x:Name="PushDMFT_Copy1" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="224,26,0,132">
+                    <Button x:Name="BasicCamSanity" Content="Basiccam sanity" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="224,26,0,132">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy2" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,25,0,133">
+                    <Button x:Name="ListFileRepo" Content="List file repo" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,25,0,133">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy3" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,95,0,63">
+                    <Button x:Name="SetDevEnv" Content="Set dev environment" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,95,0,63">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="223,95,0,63">
+                    <Button x:Name="SignDrivers" Content="Sign Drivers" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="223,95,0,63">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy4" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,95,0,63">
+                    <Button x:Name="PushRearBin" Content="Push rear sensor bin" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,95,0,63">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy5" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,95,0,63">
+                    <Button x:Name="PushDebugtools" Content="Push debug tools" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,95,0,63">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy6" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,25,0,133">
+                    <Button x:Name="Restart" Content="Restart target" Background="#FFC35666" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,25,0,133">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
-                    <Button x:Name="PushDMFT_Copy7" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,27,0,131">
+                    <Button x:Name="PushAll" Content="Push all binaries" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,27,0,131">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
@@ -111,7 +111,7 @@
         <Grid Width = "789" ShowGridLines="false" Height="450" VerticalAlignment="Bottom" Margin="0,0,0,3.0">
 
 
-            <RichTextBox x:Name="OutputText_Copy" Margin="0,0,0,44" Foreground="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+            <RichTextBox x:Name="OutputText" Margin="0,0,0,44" Foreground="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
                 <RichTextBox.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
@@ -121,14 +121,16 @@
             </RichTextBox>
         </Grid>
 
-        <Button x:Name="ClearOutput" Content="Clear console output" HorizontalAlignment="right" Margin="0,624,28.2,5.8" Width="150" RenderTransformOrigin="0.491,2.183">
+        <Button x:Name="ClearOutput" Content="Clear console output" HorizontalAlignment="right" Margin="0,636,27.8,12.4" Width="150" RenderTransformOrigin="0.491,2.183">
 
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="path"   Content="put your path path here" HorizontalAlignment="right" Margin="0,624,213.2,5.8" Width="607" RenderTransformOrigin="0.491,2.183">
+        <Label x:Name="BuildPath" Content="Build Path" HorizontalAlignment="right" Margin="0,633,212.8,8.4" Width="607" RenderTransformOrigin="0.491,2.183">
 
         </Label>
     </Grid>
+
+
 </Window>
