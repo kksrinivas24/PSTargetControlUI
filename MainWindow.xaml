@@ -12,90 +12,123 @@
             <GradientStop Color="#FF1E52E7" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <TabControl HorizontalAlignment="Left" Height="630" Margin="23,10,0,0" VerticalAlignment="Top" Width="795">
-        <TabItem Header="Main Controls" >
-            <TabItem.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FF1275E0" Offset="1"/>
-                </LinearGradientBrush>
-            </TabItem.Background>
-            <Grid Width = "800">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="188"/>
-                    <ColumnDefinition Width="349.6"/>
-                </Grid.ColumnDefinitions>
-                <RichTextBox x:Name="OutputText" Grid.Column="1" Margin="9.4,73,-239,23" Foreground="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
-                    <RichTextBox.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="#FF3E86F0" Offset="1"/>
-                        </LinearGradientBrush>
-                    </RichTextBox.Background>
-                </RichTextBox>
-                
-                <Grid Grid.Column="0" Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="200" Margin="28,10,0,0" VerticalAlignment="Top" Width="795">
+            <TabItem Header="Main Controls" >
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF1275E0" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789" Height="200" VerticalAlignment="Top">
+
                     <Grid.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="Black" Offset="0"/>
                             <GradientStop Color="#FF3E86F0" Offset="1"/>
                         </LinearGradientBrush>
                     </Grid.Background>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0"/>
-                        <ColumnDefinition Width="188"/>
-                        <ColumnDefinition Width="349.6"/>
-                    </Grid.ColumnDefinitions>
-                    <Button x:Name="PushDMFT" Content="Push DeviceMFT DLL" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,173,0,381" Width="150" RenderTransformOrigin="0.491,2.183">
+                    <Button x:Name="PushDMFT" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="102,61,0,92" Grid.ColumnSpan="2">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="StartLog" Content="Start Log" Background="#FF45CA7B" OpacityMask="#FF047315" HorizontalAlignment="left"  Width="150" RenderTransformOrigin="0.491,2.183" Margin="313,61,0,92">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="StopLog" Content="Stop Log" Background="#FFC35666" HorizontalAlignment="left"  Width="150" RenderTransformOrigin="0.491,2.183" Margin="521,61,0,92">
                         <Button.Effect>
                             <DropShadowEffect/>
                         </Button.Effect>
                     </Button>
 
-                    
-                    <Button x:Name="StartLog" Content="Start Log" Grid.Column="1" Background="#FF45CA7B" OpacityMask="#FF047315" HorizontalAlignment="Left" Margin="22.2,256,0,298" Width="150" RenderTransformOrigin="0.491,2.183">
-                        <Button.Effect>
-                            <DropShadowEffect/>
-                        </Button.Effect>
-                    </Button>
-                    <Button x:Name="StopLog" Content="Stop Log" Background="#FFC35666" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,335,0,219" Width="150" RenderTransformOrigin="0.491,2.183">
-                        <Button.Effect>
-                            <DropShadowEffect/>
-                        </Button.Effect>
-                    </Button>
-                    <Button x:Name="ClearOutput" Content="Clear console output" Grid.Column="1" HorizontalAlignment="Left" Margin="22.2,555,0,23" Width="150" RenderTransformOrigin="0.491,2.183">
-                        <Button.Effect>
-                            <DropShadowEffect/>
-                        </Button.Effect>
-                    </Button>
                 </Grid>
-            </Grid>
 
-        </TabItem>
-        <TabItem Header="Other controls" >
-            <TabItem.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FF1275E0" Offset="1"/>
-                </LinearGradientBrush>
-            </TabItem.Background>
-            <Grid Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789">
-                <Grid.Background>
+
+            </TabItem>
+            <TabItem Header="Other controls" >
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF1275E0" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Margin="0,0,0.6,2.4" HorizontalAlignment="Right" Width="789" Height="200" VerticalAlignment="Top">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF3E86F0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Button x:Name="PushDMFT_Copy1" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="224,26,0,132">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy2" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,25,0,133">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy3" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,95,0,63">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="223,95,0,63">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy4" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="407,95,0,63">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy5" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,95,0,63">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy6" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="593,25,0,133">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="PushDMFT_Copy7" Content="Push DeviceMFT DLL" HorizontalAlignment="left" Width="150" RenderTransformOrigin="0.491,2.183" Margin="41,27,0,131">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                    </Button>
+
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+        <Grid Width = "789" ShowGridLines="false" Height="450" VerticalAlignment="Bottom" Margin="0,0,0,3.0">
+
+
+            <RichTextBox x:Name="OutputText_Copy" Margin="0,0,0,44" Foreground="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+                <RichTextBox.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
                         <GradientStop Color="#FF3E86F0" Offset="1"/>
                     </LinearGradientBrush>
-                </Grid.Background>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0"/>
-                    <ColumnDefinition Width="148"/>
-                    <ColumnDefinition Width="359.2"/>
-                    <ColumnDefinition Width="0*"/>
-                </Grid.ColumnDefinitions>
-            </Grid>
-        </TabItem>
-    </TabControl>
+                </RichTextBox.Background>
+            </RichTextBox>
+        </Grid>
 
+        <Button x:Name="ClearOutput" Content="Clear console output" HorizontalAlignment="right" Margin="0,624,28.2,5.8" Width="150" RenderTransformOrigin="0.491,2.183">
 
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="path"   Content="put your path path here" HorizontalAlignment="right" Margin="0,624,213.2,5.8" Width="607" RenderTransformOrigin="0.491,2.183">
 
+        </Label>
+    </Grid>
 </Window>
