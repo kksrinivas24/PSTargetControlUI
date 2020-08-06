@@ -44,5 +44,10 @@ namespace GUIForTarget
         {
 
         }
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

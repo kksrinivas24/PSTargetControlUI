@@ -119,15 +119,20 @@
                     </LinearGradientBrush>
                 </RichTextBox.Background>
             </RichTextBox>
+            <Button x:Name="btnSettings" ToolTip="Settings" Content="" HorizontalAlignment="Left" Margin="758,417,0,0" VerticalAlignment="Top" Width="31" Height="27" BorderBrush="{x:Null}" Click="btnSettings_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-settings-48.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
 
-        <Button x:Name="ClearOutput" Content="Clear console output" HorizontalAlignment="right" Margin="0,636,27.8,12.4" Width="150" RenderTransformOrigin="0.491,2.183">
+        <Button x:Name="ClearOutput" Content="Clear console output" HorizontalAlignment="right" Margin="0,636,68.2,12.8" Width="124" RenderTransformOrigin="0.491,2.183">
 
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="BuildPath" Content="Build Path" HorizontalAlignment="right" Margin="0,633,212.8,8.4" Width="607" RenderTransformOrigin="0.491,2.183">
+        <Label x:Name="BuildPath" Content="Build Path" HorizontalAlignment="right" Margin="0,633,301.2,8.8" Width="519" RenderTransformOrigin="0.491,2.183" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
 
         </Label>
     </Grid>
